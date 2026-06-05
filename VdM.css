@@ -1471,7 +1471,7 @@ margin:0 auto;
 }
 /* cuando se activa */
 .VdMPostYoutube input:checked + label + iframe{
-    display:block;
+    display:block;}
 .MFVdM {
     max-width: 600px;
     margin: 20px auto;
@@ -1788,9 +1788,12 @@ font-family:var(--f5);
     text-transform: uppercase;
   }
 
-
   @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Quicksand:wght@400;600;700&family=Space+Mono&display=swap');
+
 /* ocultar botón para no bloquear el click */
 .VdMPostYoutube input:checked + label{
     display:none;
 }
+
+
+

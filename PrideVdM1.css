@@ -34,13 +34,11 @@
   }
 
   /* TÍTULO LGBTQ+ CON BRILLO DEGRADADO */
-  .PrideVdM-titulo h1 {
+  .PrideVdM-titulo {
     font-family: var(--f1);
-    font-size: 22px;
+    font-size: 30px;
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0,0,0,.8);
     font-weight: normal;
-
     background: linear-gradient(
       110deg, 
       #e53e3e 0%, 

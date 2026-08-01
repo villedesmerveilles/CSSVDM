@@ -346,7 +346,7 @@
     text-align: justify;
   }
 
-.PrideVdMpost-texto b, .PrideVdMpost-texto i{font-weight: bold; font-size:14px;
+.PrideVdMpost-texto b, .PrideVdMpost-texto i, .PrideVdMpost-texto strong {font-weight: bold; font-size:14px;
   background: linear-gradient(
     110deg, 
     #e53e3e 0%, 
@@ -434,7 +434,7 @@
   }
 
 
-.PrideVdM-texto b, PrideVdM-texto i  {
+.PrideVdM-texto b, .PrideVdM-texto i, .PrideVdM-texto strong  {
   font-weight: bold;
   background: linear-gradient(
     110deg, 

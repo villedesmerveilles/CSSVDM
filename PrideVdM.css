@@ -1,0 +1,421 @@
+  .PrideVdM {
+    max-width: 800px;
+    width: 95%;
+    margin: 20px auto;
+    background: var(--n2);
+    border: 2px solid #857006 !important;
+    border-radius: 20px !important;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,.5);
+    box-sizing: border-box;
+  }
+
+  /* HEADER CON BANNER CURVO */
+  .PrideVdM-header {
+    background: var(--n2);
+    min-height: 220px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  .PrideVdM-banner {
+    background: linear-gradient(135deg, #061407 0%, #0d260f 100%) !important;
+    padding: 0 40px;
+    border-bottom-right-radius: 450px;
+    width: 75%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #857006 !important;
+    z-index: 2;
+    position: relative;
+  }
+
+  /* TÍTULO LGBTQ+ CON BRILLO DEGRADADO */
+  .PrideVdM-titulo h1 {
+    font-family: var(--f1);
+    font-size: 22px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.8);
+    font-weight: normal;
+
+    background: linear-gradient(
+      110deg, 
+      #e53e3e 0%, 
+      #dd6b20 15%, 
+      #d69e2e 30%, 
+      #ffffff 48%, 
+      #ffffff 52%, 
+      #38a169 70%, 
+      #3182ce 85%, 
+      #805ad5 100%
+    );
+    background-size: 250% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: prideGlow 4s ease-in-out infinite;
+  }
+
+  @keyframes prideGlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .PrideVdM-titulo span {
+    font-family: var(--f2);
+    color: #857006;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    display: block;
+    margin-top: 4px;
+  }
+
+  /* ICONO GIGANTE DE FONDO EN EL HEADER */
+  .PrideVdM-header i.bg-icon {
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%) rotate(18deg);
+    font-size: 260px;
+    color: #857006;
+    opacity: .12;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  /* GALERÍA DE FOTOS CIRCULARES */
+  .PrideVdM-galeria {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 25px 15px;
+    background: var(--n2);
+    position: relative;
+    z-index: 3;
+    flex-wrap: wrap;
+  }
+
+  .PrideVdM-foto-mini {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #857006 !important;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,.3);
+    flex-shrink: 0;
+    background: var(--n1);
+    cursor: pointer;
+  }
+
+  .PrideVdM-foto-mini img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(.7);
+    transition: .5s;
+    display: block;
+  }
+
+  /* DESCRIPCIÓN EN HOVER */
+  .PrideVdM-foto-info {
+    position: absolute;
+    inset: 0;
+    background: rgba(6, 20, 7, 0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 5px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .PrideVdM-foto-info i {
+    font-size: 14px;
+    color: #857006;
+    margin-bottom: 2px;
+  }
+
+  .PrideVdM-foto-info span {
+    font-family: var(--f2);
+    font-size: 9px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.1;
+  }
+
+  .PrideVdM-foto-mini:hover img {
+    filter: brightness(1);
+    transform: scale(1.1);
+  }
+
+  .PrideVdM-foto-mini:hover .PrideVdM-foto-info {
+    opacity: 1;
+  }
+
+  /* CUERPO Y RECUADROS DE TEXTO */
+  .PrideVdM-body {
+    padding: 0 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--n2);
+  }
+
+  .PrideVdM-recuadro {
+    background: var(--n1);
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid rgba(133,112,6,.35) !important;
+    box-shadow: 0 8px 15px rgba(0,0,0,.4);
+    box-sizing: border-box;
+  }
+
+  .PrideVdM-label {
+    font-family: var(--f2);
+    color: #857006;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 2px;
+  }
+
+  .PrideVdM-label::after {
+    content: "";
+    height: 1px;
+    flex-grow: 1;
+    background: linear-gradient(to right, rgba(133,112,6,.7), transparent);
+  }
+
+  .PrideVdM-texto {
+    margin: 0;
+    font-family: var(--f3);
+    font-size: 14px;
+    color: var(--n4);
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  .PrideVdM-texto b {
+    color: #857006;
+    font-weight: normal;
+  }
+
+  /* FOOTER DEL EVENTO */
+  .PrideVdM-footer {
+    background: linear-gradient(to right,#061407,#0d260f) !important;
+    border-top: 2px solid #857006 !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 20px 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    box-sizing: border-box;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .PrideVdM-footer span {
+    font-family: var(--f2);
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .PrideVdM-footer i {
+    color: #857006 !important;
+    font-size: 26px !important;
+    margin: 0 !important;
+  }
+
+  /* ESTILOS DE POST DE RESPUESTA DE USUARIOS */
+  .PrideVdMpost {
+    max-width: 750px !important;
+    width: 95%;
+    margin: 20px auto;
+    background: var(--n2);
+    border: 2px solid #857006 !important;
+    border-radius: 20px !important;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,.5);
+    box-sizing: border-box;
+  }
+
+  .PrideVdMpost-header {
+    background: var(--n2);
+    min-height: 220px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  .PrideVdMpost-banner {
+    background: linear-gradient(135deg, #061407 0%, #0d260f 100%) !important;
+    padding: 0 40px;
+    border-bottom-right-radius: 450px;
+    width: 75%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #857006 !important;
+    z-index: 2;
+    position: relative;
+  }
+
+  .PrideVdMpost-header i.bg-icon {
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%) rotate(18deg);
+    font-size: 260px;
+    color: #857006;
+    opacity: .12;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .PrideVdMpost-titulo h1 {
+    font-family: var(--f1);
+    font-size: 22px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.8);
+    font-weight: normal;
+
+    background: linear-gradient(
+      110deg, 
+      #e53e3e 0%, 
+      #dd6b20 15%, 
+      #d69e2e 30%, 
+      #ffffff 48%, 
+      #ffffff 52%, 
+      #38a169 70%, 
+      #3182ce 85%, 
+      #805ad5 100%
+    );
+    background-size: 250% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: prideGlow 4s ease-in-out infinite;
+  }
+
+  .PrideVdMpost-titulo span {
+    font-family: var(--f2);
+    color: #857006;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    display: block;
+    margin-top: 4px;
+  }
+
+  .PrideVdMpost-body {
+    padding: 30px;
+    background: var(--n2);
+    box-sizing: border-box;
+  }
+
+  .PrideVdMpost-recuadro {
+    background: var(--n1);
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid rgba(133,112,6,.35) !important;
+    box-shadow: 0 8px 15px rgba(0,0,0,.4);
+    box-sizing: border-box;
+  }
+
+  .PrideVdMpost-texto {
+    margin: 0;
+    font-family: var(--f3);
+    font-size: 14px;
+    color: var(--n4);
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  .PrideVdMpost-footer {
+    background: linear-gradient(to right,#061407,#0d260f) !important;
+    border-top: 2px solid #857006 !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 20px 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    box-sizing: border-box;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .PrideVdMpost-footer span {
+    font-family: var(--f2);
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .PrideVdMpost-footer i {
+    color: #857006 !important;
+    font-size: 26px !important;
+    margin: 0 !important;
+  }
+
+  .PrideVdMpost-conexion {
+    margin: 20px auto 0;
+    padding: 15px;
+    border: 1px solid #857006;
+    border-radius: 10px;
+    background: var(--n2);
+    width: 350px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .PrideVdMpost-conexion-titulo {
+    display: block;
+    font-family: var(--f2);
+    color: #857006;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .PrideVdMpost-campos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .PrideVdMpost-campo {
+    font-family: var(--f3);
+    font-size: 13px;
+    color: var(--n4);
+  }
+
+  .PrideVdMpost-campo b {
+    color: #857006;
+    font-family: var(--f2);
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-right: 5px;
+  }

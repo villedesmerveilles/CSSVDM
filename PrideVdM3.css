@@ -292,7 +292,6 @@
     font-family: var(--f1);
     font-size: 22px;
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0,0,0,.8);
     font-weight: normal;
 
     background: linear-gradient(
@@ -346,6 +345,22 @@
     line-height: 1.6;
     text-align: justify;
   }
+
+.PrideVdMpost-texto b, .PrideVdMpost-texto i{font-weight: bold; font-size:14px;
+  background: linear-gradient(
+    110deg, 
+    #e53e3e 0%, 
+    #dd6b20 20%, 
+    #d69e2e 40%, 
+    #38a169 60%, 
+    #3182ce 80%, 
+    #805ad5 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: prideGlow 4s ease-in-out infinite;
+  display: inline-block; /* Garantiza que el degradado renderice bien en texto continuo */}
 
   .PrideVdMpost-footer {
     background: linear-gradient(to right,#061407,#0d260f) !important;
@@ -417,3 +432,23 @@
     text-transform: uppercase;
     margin-right: 5px;
   }
+
+
+.PrideVdM-texto b, PrideVdM-texto i  {
+  font-weight: bold;
+  background: linear-gradient(
+    110deg, 
+    #e53e3e 0%, 
+    #dd6b20 20%, 
+    #d69e2e 40%, 
+    #38a169 60%, 
+    #3182ce 80%, 
+    #805ad5 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: prideGlow 4s ease-in-out infinite;
+  display: inline-block; /* Garantiza que el degradado renderice bien en texto continuo */
+  font-size:14px;
+}

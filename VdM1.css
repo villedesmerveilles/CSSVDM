@@ -554,9 +554,13 @@
     overflow: hidden; 
     background: #000; 
     display: block; 
-    width: 100%; 
+    width: 500px !important; 
+    height:600px !important;
     border: none !important; 
 }
+
+.otta-post-img-box img {height:600px !important;
+                       width:500px !important;}
 
 .otta-post-img-box::before {
     content: "";

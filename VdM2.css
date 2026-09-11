@@ -554,8 +554,7 @@
     overflow: hidden; 
     background: #000; 
     display: block; 
-    width: 500px !important; 
-    height:600px !important;
+    width: 100%; 
     border: none !important; 
 }
 

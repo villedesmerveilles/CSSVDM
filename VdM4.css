@@ -558,8 +558,8 @@
     border: none !important; 
 }
 
-.otta-post-img-box img {height:500px !important;
-                       width:500px !important;}
+.otta-post-img-box img {height:100% !important;
+                       width:100% !important;}
 
 .otta-post-img-box::before {
     content: "";
